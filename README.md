@@ -58,11 +58,15 @@ plt.show()
 ```
 
 #### 4. Save the image as a PNG file using OpenCV imwrite().
-```python
-img=cv2.imread(r"C:\Users\admin\DIP\EXP1\Eagle_in_Flight.jpg")
-cv2.imwrite("Eagle.png",img)
-```
 
+```python
+ 
+
+bgr_img = cv2.imread('Eagle_in_Flight.jpg')
+cv2.imwrite('Eagle.png', bgr_img)
+
+
+```
 #### 5. Read the saved image above as a color image using cv2.cvtColor().
 ```
 img=cv2.imread('Eagle.png')
